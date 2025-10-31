@@ -9,5 +9,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: './', // importante para Vercel
+  base: './', // <--- Esto es clave para que las rutas de los assets sean relativas
 })
