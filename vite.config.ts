@@ -1,11 +1,11 @@
-import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
+import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
-  base: './', // 🔑 clave para que los scripts se carguen correctamente
+  base: './', // muy importante para que las rutas relativas funcionen en Vercel
   plugins: [
     vue(),
     vueDevTools(),
