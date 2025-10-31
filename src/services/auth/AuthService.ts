@@ -5,7 +5,7 @@ import type { loginI } from './interface/LoginInterface'
 import { handleApiError } from '@/utils/handleApiError'
 import { useAuthStore } from '@/stores/useAuthStore'
 
-const urlApi = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1'
+const urlApi = import.meta.env.VITE_API_URL || 'https://anttec-back.onrender.com/api/v1'
 
 class AuthService {
   private api: AxiosInstance
