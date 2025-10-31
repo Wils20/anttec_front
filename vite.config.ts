@@ -5,7 +5,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: './', // <- IMPORTANTE: hace que los imports de JS/CSS sean relativos
+  base: './', // Esto es clave para que los imports de JS/CSS sean relativos
   plugins: [
     vue(),
     vueDevTools(),
