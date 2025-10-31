@@ -5,7 +5,9 @@ import { fileURLToPath, URL } from 'node:url'
 export default defineConfig({
   plugins: [vue()],
   resolve: {
-    alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) }
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    },
   },
-  base: './', // Muy importante para que Vercel sirva correctamente los assets
+  base: './', // importante para Vercel
 })
