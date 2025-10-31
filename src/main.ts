@@ -1,13 +1,12 @@
-//import './assets/main.css'
-import './style.css'
+import './index.css'  // 🔹 aquí va Tailwind
+// import './style.css' // opcional, si tienes CSS extra
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-
 import App from './App.vue'
 import router from './router'
 
-//Font awesomo
+// FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
@@ -19,6 +18,7 @@ import {
   faCircleInfo,
   faPenToSquare,
 } from '@fortawesome/free-solid-svg-icons'
+
 library.add(
   faBarsStaggered,
   faChartLine,
